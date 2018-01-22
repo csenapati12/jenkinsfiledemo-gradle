@@ -7,7 +7,7 @@ pipeline {
             steps {
                
 			   //bat "cd C:\altisource\software-dump\gradle-4.1-bin\practice; gradle hello"
-                    bat "cd C:\learning\software-dump\gradle-4.1-bin\practice\jenkinsfiledemo-gradle-master\jenkinsfiledemo-gradle-master; gradle build"
+                    bat "cd C:\\learning\\software-dump\\gradle-4.1-bin\\practice\\jenkinsfiledemo-gradle-master\jenkinsfiledemo-gradle-master; gradle build"
 					 //       C:\learning\software-dump\gradle-4.1-bin\practice\jenkinsfiledemo-gradle-master\jenkinsfiledemo-gradle-master
              
             }
