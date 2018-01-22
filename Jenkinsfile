@@ -6,7 +6,8 @@ pipeline {
 
             steps {
                // withMaven(maven : 'maven3.3.9') {
-                    bat 'gradle build'
+			   //bat "cd C:\altisource\software-dump\gradle-4.1-bin\practice; gradle hello"
+                    bat "cd C:\learning\software-dump\gradle-4.1-bin\practice\jenkinsfiledemo-gradle-master\jenkinsfiledemo-gradle-master; gradle build"
               //  }
             }
         }
