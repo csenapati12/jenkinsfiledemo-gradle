@@ -6,8 +6,8 @@ pipeline {
 
             steps {
                
-			   bat "cd C:\\learning\\software-dump\\gradle-4.1-bin\\practice"
-			   bat "gradle hello"
+			   sh 'cd /opt/software/gradle'
+			   sh "gradle hello"
                    
              
             }
