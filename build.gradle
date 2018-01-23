@@ -20,7 +20,7 @@ sourceSets {
 task deploy(type: Jar)
 
 artifacts {
-    archives myJar
+    archives deploy
 }
 
 
