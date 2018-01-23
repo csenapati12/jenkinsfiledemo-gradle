@@ -19,3 +19,10 @@ task myJar(type: Jar)
 artifacts {
     archives myJar
 }
+
+
+task hello{
+  doLast {
+  println 'HELLLLLLLLLLLLLLLLLLLLLo'
+  }
+}
