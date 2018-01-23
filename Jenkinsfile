@@ -5,7 +5,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {  
-		    sh "gradle compile"
+		    sh "gradle build"
                }
         }
 
