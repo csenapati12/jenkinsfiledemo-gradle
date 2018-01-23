@@ -4,20 +4,16 @@ pipeline {
     stages {
         stage ('Compile Stage') {
 
-            steps {              
-			   
-			   sh "gradle hello"
-		           sh "gradle compile"
-                   
-             
-            }
+            steps {  
+		    sh "gradle compile"
+               }
         }
 
         stage ('Testing Stage') {
 
             steps {
             
-                     sh "gradle hello"
+                     sh "gradle test"
         
             }
         }
@@ -26,7 +22,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
              
-                    sh "gradle hello"
+                    sh "gradle deploy"
            
             }
         }
