@@ -7,6 +7,7 @@ pipeline {
             steps {              
 			   
 			   sh "gradle hello"
+		           sh "gradle compile"
                    
              
             }
@@ -16,7 +17,7 @@ pipeline {
 
             steps {
             
-                    bat 'gradle test'
+                     sh "gradle hello"
         
             }
         }
@@ -25,7 +26,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
              
-                    bat 'gradle install'
+                    sh "gradle hello"
            
             }
         }
