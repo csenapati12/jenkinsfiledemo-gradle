@@ -4,10 +4,9 @@ pipeline {
     stages {
         stage ('Compile Stage') {
 
-            steps {
-               
-			   sh 'cd /opt/software/gradle'
-			   sh "gradle hello"
+            steps {              
+			   
+			   sh "gradle myJar"
                    
              
             }
