@@ -22,8 +22,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
              
-                    sh "gradle deploy"
-           
+                    sh "gradle install"         
             }
         }
     }
