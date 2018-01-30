@@ -5,7 +5,8 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {  
-		    sh "gradle build"
+		    //sh "gradle build"
+		    bat "gradle build"
                }
         }
 
@@ -13,7 +14,9 @@ pipeline {
 
             steps {
             
-                     sh "gradle test"
+                     //sh "gradle test"
+		     bat "gradle test"
+		    
         
             }
         }
@@ -22,7 +25,8 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
              
-                    sh "gradle deploy"         
+            //        sh "gradle deploy"    
+		bat "gradle deploy"    
             }
         }
     }
